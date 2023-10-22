@@ -16,10 +16,9 @@ class TwoSum
     hash = {}
     nums.each_with_index do |num, index|
       compliment = target - num
+      already_seen_at = hash[compliment]
 
-      if (first_index = hash[compliment])
-        return [first_index, index]
-      end
+      return [already_seen_at, index] if already_seen_at
 
       hash[num] = index
     end
