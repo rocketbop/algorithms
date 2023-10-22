@@ -1,0 +1,9 @@
+Style/FrozenStringLiteralComment:
+  Description: Enforce using a frozen string literal comment.
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
