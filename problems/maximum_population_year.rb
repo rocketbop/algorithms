@@ -6,6 +6,9 @@
 #
 # Return the earliest year with the maximum population.
 class MaximumPopulationYear
+  # @param Array[Array[Integer, Integer]] = [[1991, 2]]
+  # Has O(n) complexity for a large set of logs
+  # or O(n * m) complexity for a short set, where m is the range of years
   def call(logs)
     tally = Hash.new(0)
 
